@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Companies Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="box1">
+        <div id="searchDiv">
+          <h1>Searchbox for customers</h1>
+          <form>
+            <input
+              type="Text"
+              id="companySearch"
+              placeholder="Search for company"
+            />
+          </form>
+        </div>
+
+        <div id="tableDiv">
+          <table id="table"></table>
+        </div>
+        <div class="vl"></div>
+      </div>
+
+      <div id="box2">
+        <div id="phoneDiv">
+          <form>
+            <label for="phoneNumber" style="font-size: 4vh;">Enter phone number:</label>
+            <br>
+            <input
+              type="Text"
+              id="phoneNumber"
+              placeholder="+nrKierunkowy-xxx-xxx-xxx"
+            />
+            <input type="button" value="Verify" id="verify" />
+          </form>
+
+          <button id="download" onclick="downloadCustomers()">
+            Download client list
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

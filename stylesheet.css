@@ -1,0 +1,129 @@
+/* main container */
+
+html {
+  background-color: rgb(107, 130, 172);
+}
+body {
+  margin: 0px;
+  height: 100vh;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(107, 130, 172);
+  font-size: 1vh 1vw;
+}
+
+#box1 {
+  margin: 0;
+  padding: 2%;
+  min-width: 480px;
+  background-color: rgb(107, 130, 172);
+}
+#box2 {
+  margin: 0;
+  padding: 2%;
+  background-color: rgb(107, 130, 172);
+}
+
+/* BOX1 */
+
+#searchDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+h1 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+#companySearch /*input*/ {
+  width: 98%;
+  height: 30px;
+  border: solid 1px rgb(70, 70, 70);
+  padding-left: 2%;
+}
+
+#tableDiv {
+  margin-top: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  max-height: 60vh;
+  border: solid 1px rgb(71, 71, 71);
+  color: black;
+}
+
+td {
+  border-top: grey dotted 0.5px;
+}
+
+#table {
+  padding: 0 1vw 0 1vw;
+  width: 100%;
+  max-height: 60vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+/* .v1 {
+    border-left: 3px solid white;
+    height: 100vh;
+    position: absolute;
+    left: 40%;
+    margin-left: -3px;
+    top: 0;
+  } */
+
+/* BOX2 */
+
+  #phoneDiv {
+    min-height: 150px;
+    margin-top: 50px;
+    margin-left: 20px; 
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #phoneNumber {
+    margin-top: 15px; 
+    margin-bottom: 15px;  
+  }
+
+  #download {
+    max-width: 20vw;
+    min-height: 50px;
+    background-color: rgb(13, 172, 8);
+    border: solid 1px green;
+    border-radius: 3%;
+    color: white;
+    font-size: large;
+    transition: background-color 1s;
+  } 
+
+  #download:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+  }
+
+/* additional styles */
+.correct {
+  border: green solid 1px;
+  background-color: lightgreen;
+}
+
+.incorrect {
+  border: red solid 1px;
+  background-color: lightcoral;
+}
